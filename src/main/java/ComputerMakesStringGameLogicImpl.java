@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class ComputerMakesStringGameLogicImpl implements GameLogic {
-    private static final int DIGIT = 4;
+    private final int DIGIT = 4;
     private int cows;
     private int bulls;
     private String randomNumber;
@@ -9,9 +9,12 @@ public class ComputerMakesStringGameLogicImpl implements GameLogic {
     @Override
     public void play() {
         generateRandomNumber();
-        while (bulls != 4) {
-            System.out.println(getRandomNumber());
-        }
+        ReadConsole console = new ReadConsole(DIGIT);
+        System.out.println(console.getInputNumber());
+//        while (bulls != 4) {
+//            console.scanConsole();
+//            System.out.println(getRandomNumber());
+//        }
     }
 
     // Метод генерации строки случайных неповторяющихся цифр
@@ -38,5 +41,9 @@ public class ComputerMakesStringGameLogicImpl implements GameLogic {
 
     public String getRandomNumber() {
         return randomNumber;
+    }
+
+    public int getDIGIT() {
+        return DIGIT;
     }
 }
