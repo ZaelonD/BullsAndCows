@@ -4,9 +4,6 @@ public class ReadConsole {
     private final Scanner scanner = new Scanner(System.in);
     private String inputNumber;
 
-    public ReadConsole(int digit) {
-        scanConsole(digit);
-    }
 
     // Метод считывания с консоли и проверка на валидность
     public void scanConsole(int digit) {
@@ -18,7 +15,6 @@ public class ReadConsole {
             }
             inputNumber = scanner.next();
         } while (inputNumber.length() > digit || inputNumber.length() < digit || !isNotDuplicates(inputNumber, digit));
-        scanner.close();
     }
 
     // Проверка на дублирующиеся цифры

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74e374af-610c-48c3-81d9-189e589db31c" name="Changes" comment="Generating a string of random non-repeating digits">
+    <list default="true" id="74e374af-610c-48c3-81d9-189e589db31c" name="Changes" comment="Entering a string of four non-repeating digits into the console">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BullsAndCowsRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BullsAndCowsRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ComputerMakesStringGameLogicImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ComputerMakesStringGameLogicImpl.java" afterDir="false" />
@@ -76,7 +76,9 @@
       <option name="presentableId" value="Default" />
       <updated>1689860201316</updated>
       <workItem from="1689860203031" duration="9781000" />
-      <workItem from="1689877376500" duration="5175000" />
+      <workItem from="1689877376500" duration="5539000" />
+      <workItem from="1689951315438" duration="1581000" />
+      <workItem from="1689973579261" duration="1970000" />
     </task>
     <task id="LOCAL-00001" summary="Generating a string of random non-repeating digits">
       <created>1689870058096</created>
@@ -85,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689870058096</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Entering a string of four non-repeating digits into the console">
+      <created>1689883876107</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689883876107</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +102,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Generating a string of random non-repeating digits" />
-    <option name="LAST_COMMIT_MESSAGE" value="Generating a string of random non-repeating digits" />
+    <MESSAGE value="Entering a string of four non-repeating digits into the console" />
+    <option name="LAST_COMMIT_MESSAGE" value="Entering a string of four non-repeating digits into the console" />
   </component>
 </project>
