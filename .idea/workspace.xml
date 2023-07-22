@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74e374af-610c-48c3-81d9-189e589db31c" name="Changes" comment="Logic is ready">
-      <change afterPath="$PROJECT_DIR$/src/main/java/PrintMessages.java" afterDir="false" />
+    <list default="true" id="74e374af-610c-48c3-81d9-189e589db31c" name="Changes" comment="Сreating a method for returning attempts in the correct case">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/BullsAndCows_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BullsAndCowsRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BullsAndCowsRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ComputerMakesStringGameLogicImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ComputerMakesStringGameLogicImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PrintMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrintMessages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReadConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReadConsole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReadFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WriteFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WriteFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,27 +39,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Учеба/Секрет/XXX/BullsAndCows/src/main/java&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Учеба/Секрет/XXX/BullsAndCows/src/main/java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Учеба\Секрет\XXX\BullsAndCows\src\main\java" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.BullsAndCowsRunner">
     <configuration name="BullsAndCowsRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BullsAndCowsRunner" />
       <module name="BullsAndCows" />
@@ -61,8 +71,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BullsAndCows-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/BullsAndCows-1.0-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="BullsAndCows.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/BullsAndCows_jar/BullsAndCows.jar" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR Application.BullsAndCows.jar" />
+        <item itemvalue="JAR Application.BullsAndCows-1.0-SNAPSHOT.jar" />
         <item itemvalue="Application.BullsAndCowsRunner" />
       </list>
     </recent_temporary>
@@ -79,7 +99,7 @@
       <workItem from="1689877376500" duration="5539000" />
       <workItem from="1689951315438" duration="1581000" />
       <workItem from="1689973579261" duration="2029000" />
-      <workItem from="1690008825837" duration="2070000" />
+      <workItem from="1690008825837" duration="11423000" />
     </task>
     <task id="LOCAL-00001" summary="Generating a string of random non-repeating digits">
       <created>1689870058096</created>
@@ -102,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689975599245</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Сreating a method for returning attempts in the correct case">
+      <created>1690011203708</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690011203708</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +139,7 @@
     <MESSAGE value="Generating a string of random non-repeating digits" />
     <MESSAGE value="Entering a string of four non-repeating digits into the console" />
     <MESSAGE value="Logic is ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="Logic is ready" />
+    <MESSAGE value="Сreating a method for returning attempts in the correct case" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сreating a method for returning attempts in the correct case" />
   </component>
 </project>

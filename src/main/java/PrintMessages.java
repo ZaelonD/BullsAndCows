@@ -1,3 +1,7 @@
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class PrintMessages {
 
     // Метод для получения строки попыток в правильном падеже
@@ -45,5 +49,10 @@ public class PrintMessages {
 
     public String gameOver(int count) {
         return "Строка была угадана за " + count + tryString(count);
+    }
+
+    public String startGame(String randomNumber, int numGame) {
+        DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyy HH:mm");
+        return "Game №" + numGame + " " + dateFormat.format(new Date()) + " Загаданная строка " + randomNumber;
     }
 }

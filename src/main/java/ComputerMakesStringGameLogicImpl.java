@@ -5,13 +5,15 @@ public class ComputerMakesStringGameLogicImpl implements GameLogic {
     private int cows;
     private int bulls;
     private String randomNumber;
+    private final ReadConsole console = new ReadConsole();
+    private final PrintMessages message = new PrintMessages();
+    private final WriteFile writeFile = new WriteFile();
+    private final ReadFile readFile = new ReadFile();
 
     @Override
     public void play() {
         generateRandomNumber();
-        ReadConsole console = new ReadConsole();
-        PrintMessages message = new PrintMessages();
-        System.out.println(randomNumber);
+        writeFile.writeMessageToFile(message.startGame(randomNumber, readFile.numGame(writeFile.getFile())));
         int count = 0;
         while (bulls != 4) {
             console.scanConsole(DIGIT);
@@ -24,9 +26,12 @@ public class ComputerMakesStringGameLogicImpl implements GameLogic {
                     cows++;
                 }
             }
+            writeFile.writeMessageToFile(message.requestResponseString(inputNumber, cows, bulls));
             System.out.println(message.requestResponseString(inputNumber, cows, bulls));
             count++;
         }
+        console.getScanner().close();
+        writeFile.writeMessageToFile(message.gameOver(count));
         System.out.println(message.gameOver(count));
     }
 

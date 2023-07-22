@@ -35,4 +35,8 @@ public class ReadConsole {
     public String getInputNumber() {
         return inputNumber;
     }
+
+    public Scanner getScanner() {
+        return scanner;
+    }
 }
