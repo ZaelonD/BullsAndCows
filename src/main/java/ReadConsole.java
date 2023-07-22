@@ -14,7 +14,7 @@ public class ReadConsole {
                 scanner.next();
             }
             inputNumber = scanner.next();
-        } while (inputNumber.length() > digit || inputNumber.length() < digit || !isNotDuplicates(inputNumber, digit));
+        } while (inputNumber.length() != digit || !isNotDuplicates(inputNumber, digit));
     }
 
     // Проверка на дублирующиеся цифры

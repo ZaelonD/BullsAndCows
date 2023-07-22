@@ -1,28 +1,39 @@
 import java.io.*;
 
 public class WriteFile {
-    private final String PATHNAME = "logger.txt";
     private final File file;
+    private final PrintWriter pw;
+    private final FileWriter fw;
 
     public WriteFile() {
-        file = new File(PATHNAME);
+        file = new File("logger.txt");
+        try {
+            fw = new FileWriter(file, true);
+            pw = new PrintWriter(fw);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public void writeMessageToFile(String message) {
         try {
-            PrintWriter pw = new PrintWriter(new FileWriter(file, true));
             pw.write(message + "\n");
-            pw.close();
+            pw.flush();
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
     }
 
-    public String getPATHNAME() {
-        return PATHNAME;
-    }
-
     public File getFile() {
         return file;
+    }
+
+    public void close() {
+        pw.close();
+        try {
+            fw.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

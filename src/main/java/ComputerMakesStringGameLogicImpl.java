@@ -32,6 +32,7 @@ public class ComputerMakesStringGameLogicImpl implements GameLogic {
         }
         console.getScanner().close();
         writeFile.writeMessageToFile(message.gameOver(count));
+        writeFile.close();
         System.out.println(message.gameOver(count));
     }
 
