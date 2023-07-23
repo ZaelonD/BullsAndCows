@@ -10,7 +10,7 @@
   (The endings of words must be correct, that is, there should not be 1 bull 2 cow)
   4. The result of the game must be written to a file in the following format:
   ```
-     Game №1 08/05/2021 6:46 Hidden line 0123
+     Game №1 08.05.2021 6:46 Hidden line 0123
        Request: 3521 Answer: 2 cows 1 bull
        Request: 0134 Answer: 1 cow 2 bulls
        ...
